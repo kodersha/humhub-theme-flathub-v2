@@ -1,4 +1,4 @@
-# [https://github.com/humhub/humhub](HumHub) Themes FlatHub
+# [HumHub](https://github.com/humhub/humhub) Themes FlatHub
 FlatHub - Light flat theme for HumHub 1.3.6. http://humhub.com
 
 ## Features
@@ -26,4 +26,4 @@ Webmoney
 YandexMoney
 
 ## Author
-Alexandra Travkina - [https://fixel.ru](fixel.ru)
+Alexandra Travkina - [fixel.ru](https://fixel.ru)
