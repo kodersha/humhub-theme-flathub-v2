@@ -1,0 +1,48 @@
+// Grid settings
+
+.grid-settings() {
+
+    // settings
+    @grid-columns: 12;   // number of columns
+    @gutter-width: 16px; // gap between columns
+
+    // media breakpoints (default: as on bootstrap)
+    @breakpoints:
+        ~"(min-width: 768px)",
+        ~"(min-width: 992px)",
+        ~"(min-width: 1200px)";
+
+    // max-width of containers according breakpoints
+    @container-maw:
+        750px,
+        970px,
+        1170px;
+
+    // names for breakpoint suffixes
+    @suffixes: xs, sm, md, lg;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
+
+}
+
+// Space settings
+
+.space-settings() {
+
+    @spaces: 0, 8px, 16px, 24px, 40px, 64px, 104px, 168px;
+    @spacealias: zero, nano, micro, mili, base, kilo, mega, giga;
+
+    // media breakpoints
+    @breakpoints:
+        ~"(min-width: 576px)",
+        ~"(min-width: 768px)",
+        ~"(min-width: 992px)",
+        ~"(min-width: 1200px)";
+
+    // names for breakpoint suffixes
+    @suffixes: xs, sm, md, lg, xl;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
+}

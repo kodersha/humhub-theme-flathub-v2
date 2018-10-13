@@ -1,0 +1,104 @@
+//
+// General
+// --------------------------------------------------
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-height: 100%;
+}
+body {
+  -webkit-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+  -webkit-text-size-adjust: none;
+  background-color: @background-color-page;
+  color: @text-color-main;
+  font-family: @system;
+  overflow-x: hidden;
+  padding-top: 66px;
+  cursor: default;
+
+  a,
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+    color: @text-color-highlight;
+    text-decoration: none;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  border-color: @background-color-subpage;
+}
+
+// Cols (change position property to prevent the cutting of tooltips or menus)
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12 {
+  position: inherit;
+}
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 150%;
+}
+
+input[type=text],
+input[type=password],
+input[type=select] {
+  /* Remove First */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.powered,
+.powered a {
+  color: #b8c7d3 !important;
+}
+
+.langSwitcher {
+  display: inline-block;
+}
+
+[data-ui-show-more] {
+  overflow:hidden;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+.styleswitch {
+  .turnoff {
+      display: inline-block;
+  }
+  .turnon {
+      display: none;
+  }
+}

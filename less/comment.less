@@ -1,0 +1,185 @@
+//
+// Comments
+// --------------------------------------------------
+.comment-container {
+    margin-top: 20px;
+}
+
+.comment {
+    .media {
+        border-bottom: 1px solid darken(@background-color-main, 5%);
+        position: relative !important;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        margin-top: 0;
+
+        &:last-of-type {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .nav-pills.preferences {
+            display: none;
+            right: -3px;
+            top: -3px;
+        }
+
+        .wall-entry-controls {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .content {
+            font-family: @global-font-family;
+            font-size: @global-font-size;
+            line-height: @global-line-height;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .post-files {
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+
+    /*-- Since v1.2 overflow: visible */
+    .media-body {
+        overflow:visible;
+    }
+
+    .jp-progress {
+        background-color: #dbdcdd !important;
+    }
+    .jp-play-bar {
+        background: #cacaca;
+    }
+}
+
+.comment.guest-mode {
+    .media:last-child {
+        .wall-entry-controls {
+            margin-bottom: 0;
+            margin-left: 50px;
+        }
+        hr {
+            display: none;
+        }
+    }
+}
+
+// fileupload button
+.comment_create,
+.content_edit {
+    background-color: @background-color-main;
+    border: 2px solid @background-color-main;
+    border-radius: 4px;
+    position: relative;
+    outline: none;
+
+    &:focus-within, &:focus {
+        border: 2px solid @info;
+
+        .comment-buttons {
+            display: block !important;
+        }
+        .ProseMirror-menubar {
+            display: table !important;
+        }
+    }
+
+    .files {
+        background-color: @background-color-subpage;
+        margin-top: -10px !important;
+        border-radius: 0 0 4px 4px;
+        padding: 10px !important;
+    }
+
+    .form-group {
+        margin-bottom: -15px;
+    }
+
+    .comment-buttons {
+        background-color: @background-color-main;
+        text-align: right;
+        position: relative;
+        display: none;
+    }
+
+    .ProsemirrorEditor .ProseMirror {
+        cursor: auto;
+    }
+
+    .btn-comment-submit {
+        border-radius: 4px 0 0 0;
+        padding: 10px 15px;
+    }
+
+    .fileinput-button {
+        padding: 8px 10px;
+        background: transparent !important;
+
+        .fa {
+            color: @background3;
+        }
+    }
+    .fileinput-button:hover .fa {
+        background: transparent !important;
+        color: @background4;
+    }
+    .fileinput-button:active {
+        box-shadow: none !important;
+    }
+
+    .form-control {
+        border: 0;
+
+        &:focus {
+            border: 0;
+        }
+    }
+}
+
+.post-richtext-input-group {
+    position:relative;
+}
+
+.comment-container .content_edit {
+    margin-left: 50px;
+}
+
+.comment_edit_content {
+    margin-left: 50px;
+}
+
+.comment-message {
+    overflow:hidden;
+    overflow-wrap: break-word;
+
+    [data-ui-markdown], [data-ui-richtext] {
+        font-family: @global-font-family;
+        font-size: @global-font-size;
+        line-height: @global-line-height;
+        
+        p, ul, ol {
+            font-family: @global-font-family;
+            font-size: @global-font-size;
+            line-height: @global-line-height;
+        }
+    }
+}
+
+.comment-create-input-group {
+    position:relative;
+
+    .ProsemirrorEditor {
+        .ProseMirror {
+
+        }
+    }
+}

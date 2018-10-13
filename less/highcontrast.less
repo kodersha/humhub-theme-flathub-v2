@@ -1,0 +1,380 @@
+.highcontrastColor() {
+    @hc-base: #121212;
+    @hc-text: #f4f4f4;
+    @hc-panel: #181818;
+}
+.highcontrast {
+    .highcontrastColor();
+
+    background-color: @hc-base;
+    color: @hc-text;
+
+    a {
+        color: darken(@hc-text, 30%);
+
+        &.active, &:active, &:focus, &:hover {
+            color: darken(@hc-text, 20%);
+        }
+    }
+
+    .styleswitch {
+        .turnoff {
+            display: none;
+        }
+        .turnon {
+            display: inline-block;
+        }
+    }
+
+    hr {
+        border-color: lighten(@hc-base, 5%);
+    }
+
+    .panel {
+        background-color: @hc-panel;
+
+        .panel-heading {
+            background-color: lighten(@hc-panel, 2%);
+            color: darken(@hc-text, 30%);
+        }
+
+        .panel-body {
+            p, h1, h2, h3, h4, h5, h6 {
+                color: @hc-text;
+            }
+            &.message-new {
+                background-color: @hc-panel;
+
+                .ProseMirror-menubar {
+                    background-color: @hc-panel;
+
+                    &.focusMenu {
+                        .ProseMirror-menubar {
+                            background-color: @hc-panel;
+                        }
+                    }
+                    .ProseMirror-menuitem {
+                        .ProseMirror-menu-group {
+                            border-color: @hc-panel;
+                        }
+                        .seperator {
+                            border-color: @hc-panel;
+                        }
+                    }
+                }
+            }
+            .media-list {
+                li {
+                    border-left-color: @hc-panel;
+                    border-bottom-color: lighten(@hc-panel, 2%);
+
+                    &.selected, &:hover {
+                        background-color: lighten(@hc-panel, 2%);
+                        border-left-color: @info;
+                    }
+                }
+            }
+        }
+        &.panel-tour {
+            .panel-heading {
+                background-color: darken(@primary, 10%);
+                color: @text-color-contrast;
+            }
+        }
+    }
+
+    .wall-entry {
+        .well {
+            background-color: lighten(@hc-panel, 2%);
+
+            .comment {
+                .media {
+                    border-color: lighten(@hc-panel, 3%);
+
+                    .content {
+                        .files {
+                            a {
+                                color: darken(@hc-text, 30%);
+                            }
+                        }
+                    }
+                    &-body {
+                        a {
+                            color: darken(@hc-text, 30%);
+                        }
+                    }
+                }
+                .show-all-link {
+                    background-color: lighten(@hc-panel, 2%);
+
+                    &:hover {
+                        background-color: @hc-panel;
+                    }
+                }
+            }
+            .comment_create, .content_edit {
+                background-color: @hc-panel;
+                border-color: @hc-panel;
+
+                .form-control {
+                    background-color: @hc-panel;
+                }
+
+                .comment-buttons {
+                    background-color: @hc-panel;
+                }
+
+                .ProsemirrorEditor {
+                    &.focusMenu {
+                        .ProseMirror-menubar {
+                            background-color: @hc-panel;
+                        }
+                    }
+                    .ProseMirror-menuitem {
+                        .ProseMirror-menu-group {
+                            border-color: @hc-panel;
+                        }
+                        .seperator {
+                            border-color: @hc-panel;
+                        }
+                    }
+                }
+
+                .files {
+                    background-color: lighten(@hc-panel, 2%);
+                }
+            }
+        }
+        &-controls {
+            background-color: lighten(@hc-panel, 2%);
+            color: lighten(@hc-panel, 2%);
+
+            a {
+                color: darken(@hc-text, 30%);
+
+                &.active, &:active, &:focus, &:hover {
+                    color: darken(@hc-text, 20%);
+                }                
+            }
+        }
+    }
+
+    .btn {
+        &-default, &.fileinput-button {
+            background-color: lighten(@hc-panel, 2%);
+
+            &:hover, &:focus, &:active, &.active {
+                background-color: lighten(@hc-panel, 4%);
+            }
+        }
+    }
+
+    .label {
+        &-default {
+            background-color: darken(@hc-panel, 1%);
+        }
+    }
+
+    .list-group-item {
+        background-color: @hc-panel;
+
+        &.active, &.active:focus, &.active:hover, &:hover {
+            background-color: darken(@hc-panel, 1%);
+            color: @hc-text;
+        }
+    }
+
+    .form-control {
+        background-color: lighten(@hc-panel, 2%);
+        border-color: lighten(@hc-panel, 2%);
+    }
+
+    .modal-content {
+        background-color: lighten(@hc-panel, 2%);
+
+        .modal-header {
+            h1, h2, h3, h4, h5 {
+                color: @hc-text;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        background-color: @hc-panel;
+        border-color: darken(@hc-panel, 3%) !important;
+    }
+
+    #topbar-first {
+        .notifications {
+            .arrow {
+                &::after {
+                    border-color: transparent transparent @hc-panel;
+                }
+            }
+            .dropdown-menu {
+                li {
+                    &:hover {
+                        background-color: transparent;
+                    }
+                    &.new {
+                        &:hover {
+                            background-color: darken(@hc-panel, 2%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .input-group-addon {
+        background-color: darken(@hc-panel, 1%);
+    }
+
+    .dropdown-menu{
+        .divider {
+            background-color: lighten(@hc-panel, 2%);
+        }
+        .media-list {
+            li {
+                border-left-color: @hc-panel;
+                border-bottom-color: lighten(@hc-panel, 2%);
+    
+                &.selected, &:hover {
+                    background-color: lighten(@hc-panel, 2%);
+                    border-left-color: @info;
+                }
+                &.new {
+                    background-color: darken(@hc-panel, 1%);
+                    border-left-color: darken(@hc-panel, 1%);
+
+                    &:hover {
+                        background-color: darken(@hc-panel, 2%);
+                        border-left-color: @info;
+                    }
+                }
+            }
+        }
+    }
+
+    .panel-profile {
+        .panel-profile-header {
+            .profile-user-photo-container {
+                background-color: @hc-panel;
+            }
+        }
+    }
+
+    .ProsemirrorEditor {
+        .ProseMirror-menu-active {
+            background-color: darken(@hc-panel, 3%);
+            border-color: darken(@hc-panel, 3%) !important;
+        }
+        &.focusMenu {
+            .ProseMirror-menubar {
+                background-color: lighten(@hc-panel, 2%);
+            }
+        }
+        .ProseMirror-menuitem {
+            .seperator {
+                border-color: darken(@hc-panel, 3%);
+            }
+            .ProseMirror-menu-group {
+                border-color: darken(@hc-panel, 3%);
+            }
+        }
+    }
+
+    .comment_create, .content_edit {
+        background-color: lighten(@hc-panel, 2%);
+        border-color: lighten(@hc-panel, 2%);
+
+        .comment-buttons {
+            background-color: lighten(@hc-panel, 2%);
+        }
+
+        .files {
+            background-color: @hc-panel;
+        }
+    }
+
+    .tab-menu {
+        background-color: @hc-panel;
+        .nav-tabs {
+            border-bottom-color: darken(@hc-panel, 3%);
+
+            li {
+                &>a {
+                    border-bottom-color: transparent;
+                    background-color: lighten(@hc-panel, 2%);
+                    border-color: darken(@hc-panel, 3%);
+                }
+                &.active{
+                    &>a {
+                        border-bottom-color: transparent;
+                        border-color: darken(@hc-panel, 3%);
+                        background-color: @hc-panel;
+                        color: @hc-text;
+                    }
+                }
+                &.hover, &:hover {
+                    &>a {
+                        border-bottom-color: transparent;
+                        background-color: @hc-panel;
+                        border-color: darken(@hc-panel, 3%);
+                    }
+                }
+            }
+        }
+    }
+    .nav-tabs {
+        border-bottom-color: darken(@hc-panel, 3%);
+    }
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        background-color: darken(@hc-panel, 1%);
+        border-color: darken(@hc-panel, 3%);
+    }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        border-color: darken(@hc-panel, 3%);
+        border-bottom-color: transparent;
+        background-color: @hc-panel;
+        color: @hc-text;
+    }
+    .select2-hidden-accessible {
+        background-color: lighten(@hc-panel, 2%);
+    }
+    .select2-dropdown {
+        background-color: lighten(@hc-panel, 2%);
+        border-color: lighten(@hc-panel, 2%);          
+    }
+    .select2-container--humhub {
+        background-color: lighten(@hc-panel, 2%);
+        .select2-selection {
+            background-color: lighten(@hc-panel, 2%);
+            border-color: lighten(@hc-panel, 2%);            
+        }
+        .select2-search--dropdown {
+            .select2-search__field {
+                background-color: @hc-panel;
+                border-color: @hc-panel;
+            }
+        }
+        .select2-results__option[aria-selected=true],
+        .select2-results__option--highlighted[aria-selected] {
+            background-color: @hc-panel;
+            color: @hc-text;
+        }
+    }
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        border-color: lighten(@hc-panel, 2%);
+    }
+    .table-hover > tbody > tr:hover {
+        background-color: lighten(@hc-panel, 2%);
+    }
+    .badge {
+        background-color: lighten(@hc-panel, 2%);
+    }
+    .modal .dropdown-menu li.selected, .modal .dropdown-menu li:hover, .nav-tabs .dropdown-menu li.selected, .nav-tabs .dropdown-menu li:hover, .panel .dropdown-menu li.selected, .panel .dropdown-menu li:hover {
+        background-color: lighten(@hc-panel, 2%);
+    }
+}

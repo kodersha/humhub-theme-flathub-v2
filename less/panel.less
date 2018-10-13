@@ -1,0 +1,244 @@
+.panel {
+    border: none;
+    background-color: @background-color-main;
+    box-shadow: none;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 16px;
+    h1 {
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 0;
+        color: @text-color-highlight;
+    }
+    .panel-heading {
+        .heading;
+        border-radius: 4px 4px 0 0;
+
+        .heading-link {
+            color:#6fdbe8 !important;
+            font-size: 0.8em;
+        }
+    }
+    .panel-body {
+        padding: 20px;
+        font-size: 13px;
+        position: relative;
+        border-radius: 0 0 4px 4px;
+
+        p {
+            color: @text-color-highlight;
+        }
+        &.message-new {
+            background-color: @background-color-subpage;
+
+            .ProseMirror-menubar {
+                background-color: @background-color-subpage;
+            }
+        }
+    }
+    .statistics {
+        .entry {
+            margin-right: 20px;
+            font-size: 12px;
+            .count {
+                color: @info;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 0.8em;
+            }
+        }
+    }
+    h3.media-heading {
+        small {
+            font-size: 75%;
+        }
+        small a {
+            color: @info;
+        }
+    }
+}
+
+.panel-danger {
+    border: 2px solid @danger;
+    .panel-heading {
+        color: @danger;
+    }
+}
+
+.panel-tour {
+    .nav > li > a:hover, .nav > li > a:focus {
+        background-color: @primary;
+    }
+    .panel-heading {
+        background-color: darken(@primary, 10%);
+        color: @text-color-contrast;
+    }
+    .panel-body {
+        background-color: @primary;
+        color: @text-color-contrast;
+        P {
+            color: @text-color-contrast;
+        }
+        .tour-list {
+            color: lighten(@primary, 40%);
+            a {
+                color: lighten(@primary, 40%);
+            }
+        }
+    }
+}
+
+.members {
+    .panel-body {
+        padding: 10px 20px 20px 20px;
+    }
+}
+
+.panel-success {
+    border: 2px solid @success;
+    .panel-heading {
+        color: @success;
+    }
+}
+
+.panel-warning {
+    border: 2px solid @warning;
+    .panel-heading {
+        color: @warning;
+    }
+}
+
+.panel.profile {
+    position: relative;
+    .controls {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.panel.members,
+.panel.groups,
+.panel.follower,
+.panel.spaces {
+    .panel-body a img {
+        margin-bottom: 5px;
+    }
+}
+
+.panel-profile {
+    .panel-profile-header {
+        position: relative;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        .img-profile-header-background {
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            min-height: 110px;
+        }
+        .image-upload-container {
+            .image-upload-buttons {
+                display: none;
+                position: absolute;
+                left: 20px;
+                bottom: 10px;
+                float: none;
+            }
+        }
+        .img-profile-data {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 20px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            color: #fff;
+            pointer-events: none;
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.38) 100%);
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(1%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.38)));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.38) 100%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.38) 100%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.38) 100%);
+            /* IE10+ */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.38) 100%);
+            /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#94000000', GradientType=0);
+            /* IE6-9 */
+            h1 {
+                font-size: 30px;
+                font-weight: 600;
+                margin-bottom: 7px;
+                color: #fff;
+                max-width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            h2 {
+                font-size: 16px;
+                font-weight: 300;
+                margin-top: 0;
+            }
+            h1.space {
+                font-size: 30px;
+                font-weight: 600;
+            }
+            h2.space {
+                font-size: 13px;
+                font-weight: 300;
+                max-width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .profile-user-photo-container {
+            background-color: @background-color-main;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -50px;
+            z-index: 10;
+            @media @md {
+                transform: translate(-50%,0%);
+                left: 50%;
+            }
+            @media @mmd {
+                right: 20px;
+            }
+            .profile-user-photo {
+                border: 3px solid transparent;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.panel.pulse,
+.panel.fadeIn {
+    -webkit-animation-duration: 200ms;
+    -moz-animation-duration: 200ms;
+    animation-duration: 200ms;
+}
+
+@media (max-width: 767px) {
+    .panel-profile .panel-profile-header .img-profile-data h1 {
+        font-size: 20px !important;
+    }
+}
+
+.panel-body > .tab-menu {
+    margin-left:-10px;
+    margin-right:-10px
+}
