@@ -17,13 +17,13 @@ FlatHub - Light flat theme for HumHub 1.3.6. [humhub.com](http://humhub.com)
 ## Donate
 If you want help author to buy pizzas.
 
+Webmoney
 - Z379197233784
 - E703204503713
 - R122595933015
-Webmoney
 
-- 41001757647345
 YandexMoney
+- 41001757647345
 
 ## Author
 Alexandra Travkina - [fixel.ru](https://fixel.ru)
