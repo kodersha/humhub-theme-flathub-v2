@@ -1,6 +1,8 @@
 # [HumHub](https://github.com/humhub/humhub) Themes FlatHub
 FlatHub - Light flat theme for HumHub 1.3.6. [humhub.com](http://humhub.com)
 
+![FlatHub](https://raw.githubusercontent.com/sashatravkina/humhub1.3.6-themes-flathub/master/screenshot/thumb_flathub.jpg)
+
 ## Features
 - Light flat design
 - Style switcher
