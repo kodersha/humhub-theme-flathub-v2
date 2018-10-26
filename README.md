@@ -19,6 +19,8 @@ FlatHub - Light flat theme for **HumHub 1.3.6** and and higher.
 ## Donate
 If you want help author to buy pizzas.
 
+[PayPal](https://paypal.me/forsashatravkina)
+
 Webmoney
 - Z379197233784
 - E703204503713
